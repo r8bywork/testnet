@@ -1,0 +1,86 @@
+.card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    padding: 10px;
+    background: linear-gradient(135deg, #302D30 -35%, rgba(15, 14, 15, 0.50) 48.96%, #302D30 120%);
+    box-shadow: 3px 3px 0 rgba(108, 108, 108, 0.25), -3px -3px 0 rgba(108, 108, 108, 0.25);
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    width: 140px;
+    height: 140px;
+}
+
+.name {
+    display: inline-block;
+    padding-bottom: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.main_info {
+    display: flex;
+}
+
+.info {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+
+.stats {
+    padding-left: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.rating,
+.complexity {
+    padding-right: 15px;
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.additionalInfo{
+    display: flex;
+}
+
+.additionalInfo div {
+    flex-direction: column;
+}
+
+.timeInfo {
+    margin: 0 20px;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.infoBlock{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: auto;
+    max-width: 387px;
+}
+
+.infoText {
+    text-align: left;
+}
+
+.progress {
+    padding-bottom: 40px;
+}

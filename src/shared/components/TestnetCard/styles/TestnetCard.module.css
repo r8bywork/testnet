@@ -5,8 +5,6 @@
 	padding: 10px;
 	background: linear-gradient(135deg, #302D30 -35%, rgba(15, 14, 15, 0.50) 48.96%, #302D30 120%);
 	box-shadow: 3px 3px 0 rgba(108, 108, 108, 0.25), -3px -3px 0 rgba(108, 108, 108, 0.25);
-	position: relative;
-	/*overflow: hidden; !* Чтобы ограничить размер псевдоэлемента *!*/
 }
 
 .icon {

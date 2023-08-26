@@ -28,7 +28,7 @@ export const TestnetCard: FC<iTestnetCard> = ({
 				<div className={style.main_info}>
 					<img className={style.icon} src={image2} alt="Icon" />
 					<div className={style.info}>
-						{colorizeFirstLetter(name, nameColor)}
+						<span className={style.name}>{colorizeFirstLetter(name, nameColor)}</span>
 						<div className={style.stats}>
 							<div className={style.rating}>
 								<span>Rating</span>
@@ -47,8 +47,8 @@ export const TestnetCard: FC<iTestnetCard> = ({
 					<ProgressBar percentage={progress}/>
 				</div>
 				<div className={style.additionalInfo}>
-					<AdditionalInfo Icon={TimeIcon} text={"Min"} number={time} conditions={conditionsCost}/>
-					<AdditionalInfo Icon={CostIcon} text={"$"} number={expenses} conditions={conditionsTime}/>
+					<AdditionalInfo Icon={TimeIcon} text={"Min"} number={time} conditions={conditionsCost} width={"15px"} height={"15px"}/>
+					<AdditionalInfo Icon={CostIcon} text={"$"} number={expenses} conditions={conditionsTime} width={"15px"} height={"15px"}/>
 					<AdditionalInfo Icon={InfoIcon} />
 				</div>
 			</div>

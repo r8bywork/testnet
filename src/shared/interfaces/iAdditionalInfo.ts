@@ -6,4 +6,7 @@ export interface iAdditionalInfoProps {
     number?: number;
     text?: string;
     conditions?: Condition[];
+    width?: string;
+    height?: string;
+    fontSize?: string;
 }
