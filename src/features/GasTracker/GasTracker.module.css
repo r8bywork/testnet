@@ -1,0 +1,39 @@
+.GasTracker {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(21, 21, 22, 1);
+    width: 100%;
+    padding: 5px 0 5px 0;
+}
+.left {
+    display: flex;
+    align-items: center;
+    margin-left: 100px
+}
+
+.border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 115px;
+    height: 40px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25) inset;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.slow {
+    background: #05BA8D;
+}
+
+.normal {
+    background: #2F80F6;
+}
+
+.fast {
+    background: #BA3005;
+}
+
+.language {
+}

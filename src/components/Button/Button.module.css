@@ -1,0 +1,10 @@
+.custom_button {
+    min-width: 60px;
+    height: 40px;
+    background: linear-gradient(135deg, #161616 0%, rgba(15, 14, 15, 0.50) 50%, #161616 100%);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    filter: drop-shadow(-1px -1px 0px rgba(108, 108, 108, 0.25)) drop-shadow(1px 1px 0px rgba(108, 108, 108, 0.25));
+}

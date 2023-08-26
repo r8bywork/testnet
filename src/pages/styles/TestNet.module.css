@@ -1,0 +1,9 @@
+.Header {
+    margin-bottom: 80px;
+}
+
+.TestNetTable {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Создаем колонки с автоматической шириной */
+    gap: 30px; /* Расстояние между карточками */
+}

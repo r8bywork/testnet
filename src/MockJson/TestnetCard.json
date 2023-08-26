@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Scroll",
+    "rating": "2",
+    "complexity": "3",
+    "progress": "100",
+    "time": "85",
+    "expenses": "0",
+    "info": "Info",
+    "nameColor": "#DE3A41",
+    "image": "../components/TestnetCard/styles/sei.png"
+  },
+  {
+    "name": "TABI",
+    "rating": "4",
+    "complexity": "3",
+    "progress": "0",
+    "time": "15",
+    "expenses": "8",
+    "info": "Info",
+    "nameColor": "#DE3A41",
+    "image": "../components/TestnetCard/styles/sei.png"
+  },
+  {
+    "name": "Sei Network",
+    "rating": "3",
+    "complexity": "2",
+    "progress": "50",
+    "time": "20",
+    "expenses": "100",
+    "info": "Info",
+    "image": "../components/TestnetCard/styles/sei.png",
+    "nameColor": "#DE3A41"
+  }
+]
