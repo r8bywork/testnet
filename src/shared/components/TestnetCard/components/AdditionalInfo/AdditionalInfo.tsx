@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './AdditionalInfo.module.css';
-import {calculateColorClass} from "../../utils/colorUtils.ts";
-import {iAdditionalInfoProps} from "../../interfaces/iAdditionalInfo.ts";
+import {calculateColorClass} from "../../../../utils/colorUtils.ts";
+import {iAdditionalInfoProps} from "../../../../interfaces/iAdditionalInfo.ts";
 
 const AdditionalInfo: React.FC<iAdditionalInfoProps> = ({ Icon, number, text,conditions }) => {
     const colorClass = calculateColorClass(number, conditions);

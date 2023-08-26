@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './DropdownMenu.css';
-import {ReactComponent as DropDownArrow} from "../../../assets/DropDownArrow.svg";
+import {ReactComponent as DropDownArrow} from "../../../../assets/DropDownArrow.svg";
 
 interface DropdownMenuProps {
     label: string;

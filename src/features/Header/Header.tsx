@@ -1,9 +1,13 @@
-import CustomSearchBar from "../../shared/components/CustomSearchBar/CustomSearchBar.tsx";
-import DropdownMenu from "../../shared/components/DropdownMenu/DropdownMenu.tsx";
+import CustomSearchBar from "./components/CustomSearchBar/CustomSearchBar.tsx";
+import DropdownMenu from "./components/DropdownMenu/DropdownMenu.tsx";
 import style from './styles/Header.module.css'
 import Button from "../../shared/components/Button/Button.tsx";
+import React from "react";
 
-const Header = () => {
+interface iHeader {
+    onToggleLayout: () => void;
+}
+const Header: React.FC<iHeader> = ({onToggleLayout}) => {
     const handleSearchSubmit = (query: string) => {
         console.log('Выполняем поиск:', query);
     };
@@ -24,7 +28,7 @@ const Header = () => {
                         'Investment Max']} />
                 </div>
                 <div className={style.button}>
-                    <Button onClick={()=>console.log("Клик")}/>
+                    <Button onClick={onToggleLayout}/>
                 </div>
             </div>
         </>

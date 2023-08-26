@@ -2,13 +2,20 @@ import Header from "../features/Header/Header.tsx";
 import {TestnetCard} from "../shared/components/TestnetCard/TestnetCard.tsx";
 import style from './styles/TestNet.module.css'
 import data from '../MockJson/TestnetCard.json'
+import {useState} from "react";
+import classNames from "classnames";
 const TestnetPage = () => {
+    const [layout, setLayout] = useState(false);
+    const handleToggleLayout = () => {
+        setLayout((prevIsGrid) => !prevIsGrid);
+        console.log(layout)
+    };
     return (
         <div>
             <div className={style.Header}>
-                <Header />
+                <Header onToggleLayout={handleToggleLayout} />
             </div>
-            <div className={style.TestNetTable}>
+            <div className={classNames(style.TestNetTable, { [style.listLayout]: layout })}>
                 {data.map((item, index) => (
                     <TestnetCard
                         key={index}

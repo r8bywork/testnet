@@ -6,7 +6,7 @@ import { ReactComponent as TimeIcon } from '../../../assets/Time.svg';
 import { ReactComponent as CostIcon } from '../../../assets/Cost.svg';
 import { ReactComponent as InfoIcon } from '../../../assets/Info.svg';
 import image2 from '../../../assets/sei.png'
-import AdditionalInfo from "../AdditionalInfo/AdditionalInfo.tsx";
+import AdditionalInfo from "./components/AdditionalInfo/AdditionalInfo.tsx";
 import {conditionsCost, conditionsTime} from "../../../config/conditionsConfig.ts";
 import {colorizeFirstLetter} from "../../utils/colorizeFirstLetter.tsx";
 import {iTestnetCard} from "../../interfaces/iTestnetCard.ts";
@@ -19,7 +19,7 @@ export const TestnetCard: FC<iTestnetCard> = ({
 	nameColor,
 	complexity,
 	expenses,
-	progress
+	progress,
 }) => {
 	const isBlur = false;
 

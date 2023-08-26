@@ -7,4 +7,5 @@ export interface iTestnetCard {
     complexity: number;
     expenses: number;
     progress: number;
+    layout?: boolean;
 }
