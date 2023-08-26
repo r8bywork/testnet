@@ -1,6 +1,6 @@
 import React from "react";
-import { ReactComponent as StarIcon } from "./Star.svg";
-import { ReactComponent as EmptyStarIcon } from "./EmprtyStar.svg";
+import { ReactComponent as StarIcon } from "../../../assets/Star.svg";
+import { ReactComponent as EmptyStarIcon } from "../../../assets/EmprtyStar.svg";
 import style from "./Rating.module.css";
 
 interface RatingProps {

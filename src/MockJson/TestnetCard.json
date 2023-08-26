@@ -1,11 +1,11 @@
 [
   {
     "name": "Scroll",
-    "rating": "2",
+    "rating": "3",
     "complexity": "3",
     "progress": "100",
-    "time": "85",
-    "expenses": "0",
+    "time": "5",
+    "expenses": "100",
     "info": "Info",
     "nameColor": "#DE3A41",
     "image": "../components/TestnetCard/styles/sei.png"

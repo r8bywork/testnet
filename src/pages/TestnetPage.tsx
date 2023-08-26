@@ -1,5 +1,5 @@
 import Header from "../features/Header/Header.tsx";
-import {TestnetCard} from "../components/TestnetCard/TestnetCard.tsx";
+import {TestnetCard} from "../shared/components/TestnetCard/TestnetCard.tsx";
 import style from './styles/TestNet.module.css'
 import data from '../MockJson/TestnetCard.json'
 const TestnetPage = () => {

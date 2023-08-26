@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import style from './CustomSearchBar.module.css';
-import { ReactComponent as SearchIcon } from "./assets/SearchIcon.svg";
+import { ReactComponent as SearchIcon } from "../../../assets/SearchIcon.svg";
 
 interface CustomSearchBarProps {
     onSubmit: (query: string) => void;

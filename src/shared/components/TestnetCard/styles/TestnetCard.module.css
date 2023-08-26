@@ -9,13 +9,6 @@
 	/*overflow: hidden; !* Чтобы ограничить размер псевдоэлемента *!*/
 }
 
-.content {
-	position: relative; /* Чтобы контент оставался выше псевдоэлемента */
-	filter: blur(5px);
-	/*border: 50px solid #191919;*/
-	box-shadow: none;
-}
-
 .icon {
 	width: 80px;
 	height: 80px;

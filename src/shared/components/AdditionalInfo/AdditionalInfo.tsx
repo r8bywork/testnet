@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './AdditionalInfo.module.css'; // Подключение стилей
+import style from './AdditionalInfo.module.css';
 import {calculateColorClass} from "../../utils/colorUtils.ts";
 import {iAdditionalInfoProps} from "../../interfaces/iAdditionalInfo.ts";
 

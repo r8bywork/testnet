@@ -1,4 +1,4 @@
-import {Condition} from "../types/types.ts";
+import {Condition} from "../shared/types/types.ts";
 
 export const conditionsTime:Condition[] = [
     { range: [0, 30], color: '#00FF19' },

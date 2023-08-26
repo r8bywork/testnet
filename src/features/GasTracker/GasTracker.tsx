@@ -1,8 +1,8 @@
 import style from './GasTracker.module.css';
 import classNames from 'classnames';
-import { ReactComponent as Monkey } from "./assets/Monkey.svg";
-import { ReactComponent as Rabbit } from "./assets/Rabbit.svg";
-import { ReactComponent as Turtle } from "./assets/Turtle.svg";
+import { ReactComponent as Monkey } from "../../assets/Monkey.svg";
+import { ReactComponent as Rabbit } from "../../assets/Rabbit.svg";
+import { ReactComponent as Turtle } from "../../assets/Turtle.svg";
 
 const GasTracker = () => {
     return (

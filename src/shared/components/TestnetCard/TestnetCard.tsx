@@ -2,15 +2,15 @@ import { FC } from "react";
 import Rating from "../Rating/Rating.tsx";
 import style from "./styles/TestnetCard.module.css";
 import ProgressBar from "./ProgressBar.tsx";
-import { ReactComponent as TimeIcon } from './assets/Time.svg';
-import { ReactComponent as CostIcon } from './assets/Cost.svg';
-import { ReactComponent as InfoIcon } from './assets/Info.svg';
-import image2 from '../TestnetCard/styles/sei.png'
+import { ReactComponent as TimeIcon } from '../../../assets/Time.svg';
+import { ReactComponent as CostIcon } from '../../../assets/Cost.svg';
+import { ReactComponent as InfoIcon } from '../../../assets/Info.svg';
+import image2 from '../../../assets/sei.png'
 import AdditionalInfo from "../AdditionalInfo/AdditionalInfo.tsx";
-import {conditionsCost, conditionsTime} from "../../config/conditionsConfig.ts";
+import {conditionsCost, conditionsTime} from "../../../config/conditionsConfig.ts";
 import {colorizeFirstLetter} from "../../utils/colorizeFirstLetter.tsx";
 import {iTestnetCard} from "../../interfaces/iTestnetCard.ts";
-
+import classNames from "classnames";
 export const TestnetCard: FC<iTestnetCard> = ({
 	// image,
 	time,
@@ -24,7 +24,7 @@ export const TestnetCard: FC<iTestnetCard> = ({
 	const isBlur = false;
 
 	return (
-			<div className={`${style.card} ${isBlur ? style.content : ""}`}>
+			<div className={classNames(style.card,{ [style.blurBackground]: isBlur })}>
 				<div className={style.main_info}>
 					<img className={style.icon} src={image2} alt="Icon" />
 					<div className={style.info}>
