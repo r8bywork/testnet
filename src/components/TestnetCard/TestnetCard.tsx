@@ -6,19 +6,12 @@ import { ReactComponent as TimeIcon } from './assets/Time.svg';
 import { ReactComponent as CostIcon } from './assets/Cost.svg';
 import { ReactComponent as InfoIcon } from './assets/Info.svg';
 import image2 from '../TestnetCard/styles/sei.png'
+import AdditionalInfo from "../AdditionalInfo/AdditionalInfo.tsx";
+import {conditionsCost, conditionsTime} from "../../config/conditionsConfig.ts";
+import {colorizeFirstLetter} from "../../utils/colorizeFirstLetter.tsx";
+import {iTestnetCard} from "../../interfaces/iTestnetCard.ts";
 
-interface iProps {
-	nameColor: string;
-	image?: string;
-	time: number;
-	name: string;
-	rating: number;
-	complexity: number;
-	expenses: number;
-	progress: number;
-}
-
-export const TestnetCard: FC<iProps> = ({
+export const TestnetCard: FC<iTestnetCard> = ({
 	// image,
 	time,
 	name,
@@ -28,16 +21,6 @@ export const TestnetCard: FC<iProps> = ({
 	expenses,
 	progress
 }) => {
-	const colorizeFirstLetter = (name:string, color:string) => {
-		const firstLetter = name.charAt(0);
-		const restOfName = name.slice(1);
-		const styledFirstLetter = <span style={{ color }} className={style.name}>{firstLetter}</span>;
-		return (
-			<span className={style.name}>
-                {styledFirstLetter}{restOfName}
-            </span>
-		);
-	}
 	const isBlur = false;
 
 	return (
@@ -64,18 +47,9 @@ export const TestnetCard: FC<iProps> = ({
 					<ProgressBar percentage={progress}/>
 				</div>
 				<div className={style.additionalInfo}>
-					<div className={style.infoItem}>
-						<TimeIcon />
-						<span className={style.time}>{time} Min</span>
-					</div>
-					<div className={style.infoItem}>
-						<CostIcon />
-						<span className={style.cost}>{expenses} $</span>
-					</div>
-					<div className={style.infoItem}>
-						<InfoIcon style={{width:"23px", height:"15px"}}/>
-						<span className={style.info} style={{marginLeft: 1}}>Info</span>
-					</div>
+					<AdditionalInfo Icon={TimeIcon} text={"Min"} number={time} conditions={conditionsCost}/>
+					<AdditionalInfo Icon={CostIcon} text={"$"} number={expenses} conditions={conditionsTime}/>
+					<AdditionalInfo Icon={InfoIcon} />
 				</div>
 			</div>
 	);

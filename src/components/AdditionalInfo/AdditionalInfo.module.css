@@ -1,0 +1,12 @@
+.infoItem {
+    display: flex;
+    align-items: center;
+}
+
+.infoItem span {
+    margin-left: 5px;
+}
+
+.icon {
+
+}

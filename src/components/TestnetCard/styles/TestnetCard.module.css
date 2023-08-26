@@ -74,15 +74,6 @@ span {
 	padding: 0 10px 0 10px;
 }
 
-.infoItem {
-	display: flex;
-	align-items: center;
-}
-
-.infoItem span {
-	margin-left: 5px;
-}
-
 .time {
 	color: #FAFF00;
 }

@@ -23,6 +23,11 @@
     margin-left: 10px;
 }
 
+.border span {
+    margin-left: 5px;
+    font-size: 14px;
+}
+
 .slow {
     background: #05BA8D;
 }
