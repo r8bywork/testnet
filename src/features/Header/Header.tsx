@@ -28,7 +28,7 @@ const Header: React.FC<iHeader> = ({onToggleLayout}) => {
                         'Investment Max']} />
                 </div>
                 <div className={style.button}>
-                    <Button onClick={onToggleLayout}/>
+                    <Button onClick={onToggleLayout} btnStyle={{minWidth: "60px", height: "40px"}} text={"View"}/>
                 </div>
             </div>
         </>

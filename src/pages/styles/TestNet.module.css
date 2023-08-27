@@ -1,5 +1,5 @@
 .Header {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 .TestNetTable {
@@ -10,6 +10,6 @@
 
 .listLayout {
     grid-template-columns: none;
-    grid-template-rows: repeat(auto-fill, minmax(200px, 1fr)); /* Создаем строки с автоматической высотой */
+    grid-template-rows: repeat(auto-fill, minmax(100px, 1fr)); /* Создаем строки с автоматической высотой */
     gap: 30px;
 }
