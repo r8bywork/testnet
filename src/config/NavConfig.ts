@@ -21,6 +21,7 @@ const btnStyle = {
     width: '70px',
     height: '50px',
     marginBottom: '20px',
+    transition: 'box-shadow 0.1s', // Добавляем плавный переход анимации
 };
 
 const SocialStyleBtn = {
@@ -33,8 +34,8 @@ const SocialStyleBtn = {
 };
 
 const SocialStyleSVG = {
-    minWidth: '30px',
-    height: '30px',
+    minWidth: '20px',
+    height: '20px',
 };
 
 export const buttonConfigs = [
