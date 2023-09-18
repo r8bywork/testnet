@@ -9,6 +9,7 @@ import {ReactComponent as TelegramIcon} from "../assets/Telegram.svg";
 import {ReactComponent as TwitterIcon} from "../assets/Twitter.svg";
 import {ReactComponent as DiscordIcon} from "../assets/Discord.svg";
 import {ReactComponent as YouTubeIcon} from "../assets/YouTube.svg";
+
 const svgStyle = {
     width: '30px',
     height: '30px',
@@ -21,7 +22,6 @@ const btnStyle = {
     width: '70px',
     height: '50px',
     marginBottom: '20px',
-    transition: 'box-shadow 0.1s', // Добавляем плавный переход анимации
 };
 
 const SocialStyleBtn = {
